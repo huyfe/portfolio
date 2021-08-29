@@ -1,0 +1,28 @@
+@import "../../variables/variables.scss";
+.about-section {
+    min-height: 621px;
+
+    padding: 95px 55px;
+    padding-left: 65px;
+    background-color: #46434e;
+    border-radius: 20px;
+
+    &__info {
+        .content {
+            margin-top: 10px;
+            p {
+                font-family: $font-primary;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 24px;
+                /* or 171% */
+
+                color: $color-text-dark;
+                &:first-child {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

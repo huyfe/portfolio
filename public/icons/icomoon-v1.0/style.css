@@ -1,22 +1,18 @@
-/* Font */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Ubuntu&display=swap");
-
-/* Icomoon Font */
 @font-face {
-  font-family: "icomoon";
-  src: url("fonts/icomoon.eot?6ke6g9");
-  src: url("fonts/icomoon.eot?6ke6g9#iefix") format("embedded-opentype"),
-    url("fonts/icomoon.ttf?6ke6g9") format("truetype"), url("fonts/icomoon.woff?6ke6g9") format("woff"),
-    url("fonts/icomoon.svg?6ke6g9#icomoon") format("svg");
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?6ke6g9');
+  src:  url('fonts/icomoon.eot?6ke6g9#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?6ke6g9') format('truetype'),
+    url('fonts/icomoon.woff?6ke6g9') format('woff'),
+    url('fonts/icomoon.svg?6ke6g9#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
+  font-family: 'icomoon' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -31,34 +27,45 @@
 
 .icon-arrow-left:before {
   content: "\e900";
+  color: #45577b;
 }
 .icon-arrow-left-big:before {
   content: "\e901";
+  color: #ed7d31;
 }
 .icon-arrow-right:before {
   content: "\e902";
+  color: #f2f2f2;
 }
 .icon-arrow-right-big:before {
   content: "\e903";
+  color: #ed7d31;
 }
 .icon-desktop:before {
   content: "\e904";
+  color: #45577b;
 }
 .icon-download:before {
   content: "\e905";
+  color: #7a8391;
 }
 .icon-dribble:before {
   content: "\e906";
+  color: #45577b;
 }
 .icon-email:before {
   content: "\e907";
+  color: #f2f2f2;
 }
 .icon-github:before {
   content: "\e908";
+  color: #45577b;
 }
 .icon-linkedin:before {
   content: "\e909";
+  color: #45577b;
 }
 .icon-pencil:before {
   content: "\e90a";
+  color: #45577b;
 }
