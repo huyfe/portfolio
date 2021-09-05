@@ -1,0 +1,114 @@
+@import "../../variables/variables.scss";
+.project-section {
+    &__title {
+        margin-bottom: 50px;
+    }
+    &__content {
+        margin-right: -110px;
+        .splide {
+            width: 100%;
+        }
+        .splide__arrows {
+            position: absolute;
+            top: -75px;
+            right: 100px;
+            display: flex;
+            .splide__arrow {
+                position: unset;
+                border: 1px solid $color-second;
+                opacity: 1;
+                padding: 18px 20px;
+                background-color: $color-second;
+                span {
+                    color: #fff;
+                }
+                transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+                &:hover {
+                    border: 1px solid #45577b;
+                    background-color: #45577b;
+                    span {
+                        color: #fff;
+                    }
+                }
+
+                &:disabled {
+                    border: 1px solid $color-second;
+                    background-color: transparent;
+                    span {
+                        color: #45577b;
+                    }
+                }
+            }
+            .splide__arrow--prev {
+                border-radius: 5px 0px 0px 5px;
+            }
+            .splide__arrow--next {
+                border-radius: 0px 5px 5px 0px;
+            }
+        }
+        .item {
+            height: 460px;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 15px;
+            position: relative;
+            &:hover {
+                img {
+                    transform: scale(1.05);
+                }
+            }
+            &__image {
+                margin: 0 -15px;
+                margin-top: -15px;
+                overflow: hidden;
+                height: 375px;
+                a {
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+                }
+            }
+
+            h3 {
+                font-family: $font-primary;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 24px;
+                color: #ed7d31;
+
+                margin-top: 15px;
+                margin-bottom: 0;
+            }
+
+            h2 {
+                font-family: $font-second;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 45px;
+                color: #45577b;
+                a {
+                    @extend h2;
+                }
+            }
+
+            .wrap-fade {
+                width: 100%;
+                height: 360px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 1;
+            }
+        }
+    }
+}

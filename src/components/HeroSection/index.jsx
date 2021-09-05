@@ -10,7 +10,7 @@ HeroSection.propTypes = {
 function HeroSection(props) {
     return (
         <section className="hero-section">
-            <div className="container-fluid px-0">
+            <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-4">
                         <div className="hero-section__intro">

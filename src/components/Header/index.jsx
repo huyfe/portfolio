@@ -33,7 +33,7 @@ function Header(props) {
 
     return (
         <>
-            <header className="header">
+            <header className="header container">
                 <div className="row align-items-center">
                     <div className="col-auto">
                         <div className="header__logo">

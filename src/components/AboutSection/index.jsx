@@ -11,8 +11,8 @@ AboutSection.propTypes = {
 
 function AboutSection(props) {
     return (
-        <section className="about-section">
-            <div className="container-fluid p-0">
+        <section className="about-section container">
+            <div className="container">
                 <div className="row">
                     <div className="col-lg-7">
                         <div className="about-section__thumbnail">
