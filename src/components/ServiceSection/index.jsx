@@ -27,7 +27,7 @@ function ServiceSection(props) {
                     <div className="col-lg-5 ms-auto">
                         <div className="service-section__content">
                             <ul className="services row">
-                                <div className="col-lg-6">
+                                <div className="col-6">
                                     <div className="services__item">
                                         <div className="icon">
                                             <span className="icon-desktop"></span>
@@ -43,7 +43,7 @@ function ServiceSection(props) {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-6">
+                                <div className="col-6">
                                     <div className="services__item">
                                         <div className="icon">
                                             <span className="icon-pencil"></span>

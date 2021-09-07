@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './style.scss';
 import { Link, NavLink } from 'react-router-dom';
@@ -8,6 +8,9 @@ Header.propTypes = {
 };
 
 function Header(props) {
+
+    const [toggleMenu, setToggleMenu] = useState(false);
+
     const menuItem = [
         {
             link: "/about",
@@ -31,25 +34,34 @@ function Header(props) {
         )
     })
 
+    const showMenu = () => {
+        setToggleMenu(!toggleMenu);
+    }
+
     return (
         <>
-            <header className="header container">
-                <div className="row align-items-center">
-                    <div className="col-auto">
-                        <div className="header__logo">
-                            <Link to="/" exact="true"><img src="./logo.png" alt="" /></Link>
+            <header className="header ">
+                <div className="container">
+                    <div className={toggleMenu ? "header__top-nav is-open" : "header__top-nav"}>
+                        <div className="header__wrap-logo">
+                            <div className="header__logo">
+                                <Link to="/" exact="true"><img src="./logo.png" alt="" /></Link>
+                            </div>
                         </div>
-                    </div>
-                    <div className="col-auto d-lg-none d-md-block d-xs-block">
-                        <button>
-                            Menu
-                        </button>
-                    </div>
-                    <div className="col-auto ms-auto">
-                        <ul className="header__menu d-flex flex-lg-row flex-md-column flex-column">
-                            <li><NavLink to="/">Home</NavLink></li>
-                            {menu}
-                        </ul>
+                        <div className={toggleMenu ? "header__wrap-btn is-open" : "header__wrap-btn"} >
+                            <button onClick={showMenu} id="btnMenu">
+                                <span className="icon-line"></span>
+                                <span className="icon-line"></span>
+                                <span className="icon-line"></span>
+                            </button>
+                        </div>
+                        <div onClick={showMenu} className={toggleMenu ? "fade-blur is-open" : "fade-blur"}></div>
+                        <div className={toggleMenu ? "header__wrap-menu is-open" : "header__wrap-menu"}>
+                            <ul className="header__menu d-flex flex-md-row flex-column">
+                                <li><NavLink to="/">Home</NavLink></li>
+                                {menu}
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </header>

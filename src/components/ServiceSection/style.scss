@@ -3,9 +3,15 @@
 .service-section {
     &__title {
         width: 85%;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
         .title {
             &__title {
                 margin-bottom: 20px;
+                @media (max-width: 768px) {
+                    margin-bottom: 15px;
+                }
             }
         }
     }
@@ -17,6 +23,11 @@
         line-height: 24px;
         /* or 171% */
 
+        @media (max-width: 768px) {
+            font-size: 12px;
+            line-height: 20px;
+        }
+
         color: #7a8391;
         strong {
             color: #45577b;
@@ -26,21 +37,52 @@
     &__content {
         background-color: #46434e;
         border-top-left-radius: 20px;
-        position: relative;
+        position: absolute;
+        right: 0;
+        width: 40%;
         height: 275px;
-        margin-right: -110px;
+        @media (max-width: 768px) {
+            height: auto;
+            width: 100%;
+            position: relative;
+            top: auto;
+            left: auto;
+            background-color: transparent;
+        }
         .services {
             width: 91%;
             position: absolute;
             top: 85px;
             left: -70px;
             z-index: 1;
-            .col-lg-6 {
+
+            @media (max-width: 1250px) {
+                width: 110%;
+            }
+
+            @media (max-width: 768px) {
+                width: 100%;
+                position: relative;
+                top: auto;
+                left: auto;
+                margin: 0;
+                margin-bottom: 60px !important;
+            }
+
+            .col-6 {
                 &:first-child {
                     padding-right: 20px;
+                    @media (max-width: 768px) {
+                        padding-right: 10px;
+                        padding-left: 0;
+                    }
                 }
                 &:last-child {
                     padding-left: 20px;
+                    @media (max-width: 768px) {
+                        padding-left: 10px;
+                        padding-right: 0;
+                    }
                 }
             }
             &__item {
@@ -49,9 +91,18 @@
                 height: 100%;
                 border-radius: 5px;
 
+                @media (max-width: 1250px) {
+                    padding: 15px;
+                }
+                @media (max-width: 768px) {
+                    padding: 15px;
+                }
                 .icon {
                     font-size: 42px;
                     color: #45577b;
+                    @media (max-width: 768px) {
+                        font-size: 32px;
+                    }
                 }
                 .name {
                     h3 {
@@ -64,6 +115,11 @@
 
                         color: #45577b;
                         margin-bottom: 10px;
+
+                        @media (max-width: 768px) {
+                            font-style: 14px;
+                            line-height: 22px;
+                        }
                     }
                 }
                 .description {
@@ -73,10 +129,14 @@
                         font-weight: normal;
                         font-size: 14px;
                         line-height: 24px;
-                        /* or 171% */
 
                         color: #7a8391;
                         margin-bottom: 0;
+
+                        @media (max-width: 768px) {
+                            font-size: 12px;
+                            line-height: 20px;
+                        }
                     }
                 }
             }

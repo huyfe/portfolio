@@ -11,7 +11,11 @@
 
             color: $color-primary;
             margin-bottom: 70px;
-
+            @media (max-width: 768px) {
+                font-size: 54px;
+                line-height: 1;
+                margin-bottom: 40px;
+            }
             span {
                 display: block;
                 font-family: $font-primary;
@@ -22,10 +26,18 @@
 
                 color: $color-second;
                 margin-bottom: 25px;
+                @media (max-width: 768px) {
+                    font-size: 22px;
+                    line-height: 24px;
+                    margin-bottom: 15px;
+                }
             }
             strong {
                 display: block;
                 margin-bottom: 30px;
+                @media (max-width: 768px) {
+                    margin-bottom: 20px;
+                }
             }
             .line {
                 display: block;
@@ -44,6 +56,9 @@
                     font-size: 32px;
                     transition: all 0.3s ease;
                     color: $color-primary;
+                    @media (max-width: 768px) {
+                        font-size: 24px;
+                    }
                 }
                 &:hover span {
                     color: $color-second !important;
@@ -55,6 +70,10 @@
         margin: 0 -15px;
         position: relative;
         height: 550px;
+        @media (max-width: 768px) {
+            margin: 0;
+            height: 400px;
+        }
         img {
             position: absolute;
             width: 100%;
@@ -64,22 +83,36 @@
     }
     &__info {
         padding-left: 50px;
+        @media (max-width: 768px) {
+            padding-left: 0;
+            margin-top: 20px;
+        }
         h2 {
             font-size: 24px;
             line-height: 45px;
-
             color: $color-primary;
             margin-bottom: 20px;
+            @media (max-width: 768px) {
+                font-size: 22px;
+                line-height: 30px;
+                margin-bottom: 15px;
+            }
         }
         p {
             font-size: 14px;
             line-height: 24px;
             margin-bottom: 30px;
-
             color: $color-text-light;
+            @media (max-width: 768px) {
+                font-size: 12px;
+                line-height: 22px;
+            }
         }
     }
     &__contact {
+        @media (max-width: 768px) {
+            margin-bottom: 40px !important;
+        }
         li {
             margin-right: 35px;
 

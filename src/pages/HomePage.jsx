@@ -18,17 +18,19 @@ HomePage.propTypes = {
 
 function HomePage(props) {
     return (
-        <main className="page home-page container-fluid px-0">
+        <>
             <Route path="/" exact component={Header} />
-            <Route path="/" exact component={HeroSection} />
-            <Route path="/" exact component={AboutSection} />
-            <Route path="/" exact component={() => <Spacing dH="100px" tH="70px" mH="50px" />} />
-            <Route path="/" exact component={ProjectSection} />
-            <Route path="/" exact component={() => <Spacing dH="100px" tH="70px" mH="50px" />} />
-            <Route path="/" exact component={ServiceSection} />
-            <Route path="/" exact component={FeedBackSection} />
+            <main className="page home-page container-fluid px-0">
+                <Route path="/" exact component={HeroSection} />
+                <Route path="/" exact component={AboutSection} />
+                <Route path="/" exact component={() => <Spacing dH="100px" tH="70px" mH="50px" />} />
+                <Route path="/" exact component={ProjectSection} />
+                <Route path="/" exact component={() => <Spacing dH="100px" tH="70px" mH="50px" />} />
+                <Route path="/" exact component={ServiceSection} />
+                <Route path="/" exact component={FeedBackSection} />
+            </main>
             <Route path="/" exact component={Footer} />
-        </main>
+        </>
     );
 }
 

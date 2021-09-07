@@ -9,6 +9,10 @@
         justify-content: center;
         margin: 0 auto;
         border-top: 1px solid #7e7e7e;
+
+        @media (max-width: 768px) {
+            height: 150px;
+        }
     }
     &__social {
         a {
@@ -32,6 +36,12 @@
             text-align: center;
 
             color: #c4c4c4;
+            margin-bottom: 0;
+
+            @media (max-width: 768px) {
+                font-size: 12px;
+                line-height: 20px;
+            }
         }
     }
 }

@@ -61,6 +61,24 @@ function ProjectSection(props) {
             prev: 'splide__arrow--prev ',
             next: 'splide__arrow--next ',
         },
+        breakpoints: {
+            550: {
+                padding: {
+                    perPage: 1,
+                    perMove: 1,
+                    right: '200px'
+                },
+                gap: '15px',
+            },
+            768: {
+                perPage: 1,
+                perMove: 1,
+                padding: {
+                    right: '300px'
+                },
+                gap: '28px',
+            }
+        }
     };
 
     return (
