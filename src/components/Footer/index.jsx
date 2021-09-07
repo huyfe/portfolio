@@ -12,7 +12,7 @@ function Footer(props) {
         <footer className="footer">
             <div className="container">
                 <div className="footer__content text-center">
-                    <ul className="footer__social d-flex justify-content-center gap-4">
+                    <ul className="footer__social d-flex justify-content-center">
                         <li>
                             <Link to="https://www.linkedin.com/in/huy-tran-57777b202/">
                                 <span className="icon-linkedin"></span>
