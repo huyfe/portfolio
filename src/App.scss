@@ -54,6 +54,11 @@ main {
     opacity: 1;
     visibility: visible;
 
+    .image {
+        opacity: 0;
+        animation: fadeOut 3.5s;
+        transition: all 1s;
+    }
     .progress {
         overflow: hidden;
         position: relative;

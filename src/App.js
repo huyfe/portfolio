@@ -20,6 +20,9 @@ function App() {
   return (
     <>
       <div className={!removeAnim ? "loading" : "loading loaded"}>
+        <div className="image d-lg-none d-block w-25 mb-5">
+          <img src="./logo.png" className="img-fluid" />
+        </div>
         <div className="progress"></div>
       </div>
       <Route path="/" component={Header} />
