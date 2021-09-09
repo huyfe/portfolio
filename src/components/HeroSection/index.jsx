@@ -61,7 +61,9 @@ function HeroSection(props) {
                                     <button className="email"><span className="icon-email"></span> Email Me</button>
                                 </li>
                                 <li>
-                                    <button className="download"><span className="icon-download"></span> Download CV</button>
+                                    <a href="./files/CV-TranQuocHuy-Frontend.pdf" download>
+                                        <button className="download"><span className="icon-download"></span> Download CV</button>
+                                    </a>
                                 </li>
                             </ul>
                         </div>

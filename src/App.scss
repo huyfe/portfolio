@@ -35,3 +35,135 @@ main {
     padding-top: 80px;
 }
 /* End reset css */
+
+/* Custom loading page */
+.loading {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #45577b;
+
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 1;
+    visibility: visible;
+
+    .progress {
+        overflow: hidden;
+        position: relative;
+        width: 300px;
+        height: 30px;
+        background-color: #dad6d6;
+        border-radius: 8px;
+        margin-bottom: 0;
+        opacity: 0;
+        animation: fadeOut 3.5s;
+        transition: all 1s;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f90;
+            background-image: -webkit-linear-gradient(
+                45deg,
+                rgba(255, 255, 255, 0.2) 25%,
+                transparent 25%,
+                transparent 50%,
+                rgba(255, 255, 255, 0.2) 50%,
+                rgba(255, 255, 255, 0.2) 75%,
+                transparent 75%,
+                transparent
+            );
+            animation: width 3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        @keyframes width {
+            0% {
+                width: 0%;
+            }
+            20% {
+                width: 0%;
+            }
+            40% {
+                width: 20%;
+            }
+            80% {
+                width: 80%;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+        @keyframes fadeOut {
+            0% {
+                opacity: 0;
+            }
+            30% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    }
+
+    p {
+        font-size: 40px;
+        line-height: 48px;
+        text-transform: uppercase;
+        &.animate-transform {
+            opacity: 1;
+            transform: translateY(-10px);
+            animation: transform 3s;
+        }
+        @keyframes transform {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-10px);
+            }
+        }
+    }
+}
+
+.loaded {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f90;
+    background-image: -webkit-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.2) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.2) 75%,
+        transparent 75%,
+        transparent
+    );
+}

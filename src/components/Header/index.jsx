@@ -58,7 +58,7 @@ function Header(props) {
                         <div onClick={showMenu} className={toggleMenu ? "fade-blur is-open" : "fade-blur"}></div>
                         <div className={toggleMenu ? "header__wrap-menu is-open" : "header__wrap-menu"}>
                             <ul className="header__menu d-flex flex-md-row flex-column">
-                                <li><NavLink to="/">Home</NavLink></li>
+                                <li><NavLink to="/" exact>Home</NavLink></li>
                                 {menu}
                             </ul>
                         </div>

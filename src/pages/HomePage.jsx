@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import './HomePage.scss';
 import { BrowserRouter as Router, Switch, Route, Link, NavLink } from "react-router-dom";
 
 // Import Component 
@@ -17,9 +18,10 @@ HomePage.propTypes = {
 };
 
 function HomePage(props) {
+
+
     return (
         <>
-            <Route path="/" exact component={Header} />
             <main className="page home-page container-fluid px-0">
                 <Route path="/" exact component={HeroSection} />
                 <Route path="/" exact component={AboutSection} />
@@ -29,7 +31,6 @@ function HomePage(props) {
                 <Route path="/" exact component={ServiceSection} />
                 <Route path="/" exact component={FeedBackSection} />
             </main>
-            <Route path="/" exact component={Footer} />
         </>
     );
 }
