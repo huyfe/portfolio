@@ -17,25 +17,25 @@ function FeedBack(props) {
             name: "Jay Gray",
             comment: "“Great work! We had a challenging design and Hani completed it successfully. Also, he is very responsive. Overall, I am happy with the outcome.”",
             link: "https://google.com",
-            avatar: "./images/avatar.svg"
+            avatar: "https://image.thanhnien.vn/1024/uploaded/nthanhluan/2015_11_18/anonymous-image_fgnd.jpg"
         },
         {
-            name: "Jay Gray",
-            comment: "“Great work! We had a challenging design and Hani completed it successfully. Also, he is very responsive. Overall, I am happy with the outcome.”",
+            name: "Alice",
+            comment: "Wao! He is good man. Also, he is very responsive. Overall, I am happy with the outcome.”",
             link: "https://google.com",
-            avatar: "https://cdn.tgdd.vn//GameApp/-1//top-7-phan-mem-thiet-ke-trang-web-website-chuyen-nghiep-cho-thumb-800x450.jpg"
+            avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRar9_7AALlR-ZTpH0LW9JKiOBE3QeqnnGhBJuUDQ4VKBXJGmy6oVYvdWh1BNZDyKZBvd0&usqp=CAU"
         },
         {
-            name: "Jay Gray",
+            name: "Bill Gates",
             comment: "“Great work! We had a challenging design and Hani completed it successfully. Also, he is very responsive. Overall, I am happy with the outcome.”",
             link: "https://google.com",
-            avatar: "https://cdn.tgdd.vn//GameApp/-1//top-7-phan-mem-thiet-ke-trang-web-website-chuyen-nghiep-cho-thumb-800x450.jpg"
+            avatar: "https://vnn-imgs-f.vgcloud.vn/2021/05/04/16/bill-gates-giau-co-nao-1.jpg"
         },
         {
-            name: "Jay Gray",
+            name: "Neymar Junior",
             link: "https://google.com",
-            comment: "“Great work! We had a challenging design and Hani completed it successfully. Also, he is very responsive. Overall, I am happy with the outcome.”",
-            avatar: "https://cdn.tgdd.vn//GameApp/-1//top-7-phan-mem-thiet-ke-trang-web-website-chuyen-nghiep-cho-thumb-800x450.jpg"
+            comment: "“This is my great fan. He see me a his idol”",
+            avatar: "https://www.fcbarcelonanoticias.com/uploads/s1/25/47/49/neymartop-254749.jpeg"
         }
     ];
 
