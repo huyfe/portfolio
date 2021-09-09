@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './style.scss';
 import Title from '../Title';
@@ -11,6 +11,11 @@ FeedBack.propTypes = {
 };
 
 function FeedBack(props) {
+
+    const [modal, setModal] = useState(false);
+    const showModal = () => {
+        setModal(!modal);
+    }
 
     let itemArray = [
         {
@@ -56,6 +61,8 @@ function FeedBack(props) {
         },
     };
 
+
+
     return (
         <section className="feedback-section">
             <div className="container">
@@ -78,10 +85,62 @@ function FeedBack(props) {
                         <div className="feedback-section__control">
                             <h3>Leave a comment?</h3>
                             <div className="feedback-section__button">
-                                <button>Comment</button>
+                                <button onClick={showModal}>Comment</button>
                                 <button>See More Projects</button>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div className={modal ? "feedback-section__modal overlay" : "feedback-section__modal"}>
+                <div className={modal ? "wrap animate__fadeInDown" : "wrap"}>
+                    <div className="row mb-lg-4 mb-2">
+                        <div className="col-12 text-center">
+                            <h4>Comment</h4>
+                        </div>
+                    </div>
+                    <div className="child row">
+                        <div className="col-lg-2 col-12">
+                            <div className="icon">
+                                <span className="d-lg-none d-block">Avatar</span>
+                                <img src="./images/user.svg" alt="Image" className="img-fluid d-lg-block d-none" />
+                            </div>
+                        </div>
+                        <div className="col-lg-10">
+                            <div className="control">
+                                <input type="text" className="form-control" placeholder="Image url" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="child row">
+                        <div className="col-lg-2">
+                            <div className="icon">
+                                <span className="d-lg-none d-block">Name</span>
+                                <img src="./images/identity.svg" alt="Image" className="img-fluid d-lg-block d-none" />
+                            </div>
+                        </div>
+                        <div className="col-lg-10">
+                            <div className="control">
+                                <input type="text" className="form-control" placeholder="Your name" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="child row">
+                        <div className="col-lg-2">
+                            <div className="icon">
+                                <p className="d-lg-none d-block">Comments</p>
+                                <img src="./images/comments.svg" alt="Image" className="img-fluid d-lg-block d-none" />
+                            </div>
+                        </div>
+                        <div className="col-lg-10">
+                            <div className="control">
+                                <textarea rows="4" type="text" className="form-control" placeholder="Your comment" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="buttons">
+                        <button onClick={showModal}>Cancel</button>
+                        <button>Comment</button>
                     </div>
                 </div>
             </div>
