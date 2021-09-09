@@ -63,9 +63,9 @@ function ProjectSection(props) {
         },
         breakpoints: {
             550: {
+                perPage: 1,
+                perMove: 1,
                 padding: {
-                    perPage: 1,
-                    perMove: 1,
                     right: '200px'
                 },
                 gap: '15px',
