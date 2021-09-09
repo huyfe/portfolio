@@ -15,7 +15,7 @@ function FeedBack(props) {
     let itemArray = [
         {
             name: "Jay Gray",
-            comment: "“Great work! We had a challenging design and Hani completed it successfully. Also, he is very responsive. Overall, I am happy with the outcome.”",
+            comment: "“Great work! We had a challenging design and Huy Junior completed it successfully. Also, he is very responsive. Overall, I am happy with the outcome.”",
             link: "https://google.com",
             avatar: "https://image.thanhnien.vn/1024/uploaded/nthanhluan/2015_11_18/anonymous-image_fgnd.jpg"
         },
@@ -27,7 +27,7 @@ function FeedBack(props) {
         },
         {
             name: "Bill Gates",
-            comment: "“Great work! We had a challenging design and Hani completed it successfully. Also, he is very responsive. Overall, I am happy with the outcome.”",
+            comment: "“Great work! We had a challenging design and Junior completed it successfully. Also, he is very responsive. Overall, I am happy with the outcome.”",
             link: "https://google.com",
             avatar: "https://vnn-imgs-f.vgcloud.vn/2021/05/04/16/bill-gates-giau-co-nao-1.jpg"
         },

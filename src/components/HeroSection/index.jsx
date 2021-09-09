@@ -46,10 +46,15 @@ function HeroSection(props) {
                     <div className="col-lg-4">
                         <div className="hero-section__info">
                             <h2>
-                                Web Developer and UI Designer, based in Ho Chi Minh city, Vietnam.
+                                Front-end Developer and Wordpress Developer, based in Ho Chi Minh city,
+                                Vietnam.
                             </h2>
                             <p>
-                                I am a “half-blood” Web Developer and UI Designer who has experience creating many projects in a various industry. In other words, I understand how to build an aesthetic, powerful, and lightweight website at once.
+                                As a young, enthusiastic and passionate student
+                                With Web Developer, especially Front-end, I
+                                has well absorbed the knowledge taught at school and self-
+                                learn more tinkering from the internet, from people
+                                you, the forerunners. Connect with me if you are interested.
                             </p>
                             <ul className="hero-section__contact d-flex">
                                 <li>
