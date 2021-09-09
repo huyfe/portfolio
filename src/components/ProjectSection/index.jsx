@@ -18,27 +18,27 @@ function ProjectSection(props) {
             title: "Giorgio Dental",
             description: "Mulazamah",
             link: "https://google.com",
-            image: "./images/giorgio.jpg"
+            image: "./images/giorgio.webp"
         },
         {
             subTitle: "Web Wordpress",
             title: "Sessions Group",
             description: "Mulazamah",
             link: "https://google.com",
-            image: "./images/sessions.jpg"
+            image: "./images/sessions.webp"
         },
         {
             subTitle: "Web Wordpress",
             title: "The Grove Distillery",
             description: "Mulazamah",
             link: "https://google.com",
-            image: "./images/tgd.jpg"
+            image: "./images/tgd.webp"
         },
         {
             subTitle: "Web Wordpress",
             title: "Glenorchy Info",
             link: "https://google.com",
-            image: "./images/glen.jpg"
+            image: "./images/glen.webp"
         }
     ];
 
